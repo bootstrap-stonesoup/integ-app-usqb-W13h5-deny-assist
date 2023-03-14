@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: integration-suite-test-component-git-source-yslq
+  namespace: integration-e2e-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/dheerajodha/test-images@sha256:3c8278ef4a640f6432c731d4107972a209a156d6dd4370548c5d6fe944569a55
+        name: my-python
+        resources: {}
+status: {}
